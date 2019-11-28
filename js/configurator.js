@@ -80,9 +80,9 @@ const app = new Vue({
             this.changeLang('ru');
         }
         document.getElementById("streamImage").setAttribute('src',
-            'http://' + window.location.hostname + ':8080/?action=stream');
+            'images/plugStreamImage.png');
         var logsFrame = document.getElementById("logsFrame");
-        logsFrame.setAttribute('src', 'http://' + window.location.hostname + '/logs/');
+        logsFrame.setAttribute('src', 'https://dl.trikset.com');
 
         var xhr = new XMLHttpRequest();
         xhr.open("GET", this.scriptPath + "get-current.sh", false);
@@ -374,7 +374,7 @@ const app = new Vue({
         },
 
         getSnapshot() {
-            window.open('http://' + window.location.hostname + ':8080/?action=snapshot', '_blank');
+            window.open('images/plugStreamImage.png', '_blank');
         },
     }
 });
