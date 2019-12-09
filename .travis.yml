@@ -14,7 +14,7 @@ env:
 jobs:
   include:
   - stage: compile
-  - name: "Job 1"
+    name: "Job 1"
     script: echo "HELLO JOB 1" && export PATH=$(readlink -f "shellcheck-${scversion}"):$PATH
   - name: "Job 2"
     script: echo "HELLO JOB 2" && export PATH=$(readlink -f "shellcheck-${scversion}"):$PATH
