@@ -19,8 +19,8 @@
     <title>Configurator</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" text="text/css" href="styles/bootstrap.css">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" text="text/css" href="www/styles/bootstrap.css">
+    <link rel="icon" href="www/images/favicon.ico">
 
     <style>
         .main-color-green {
@@ -68,7 +68,7 @@
 
         @font-face {
             font-family: Montserrat-BlackItalic;
-            src: url('fonts/Montserrat-Bold.ttf');
+            src: url('www/fonts/Montserrat-Bold.ttf');
 
             font-weight: normal;
 
@@ -77,7 +77,7 @@
 
         @font-face {
             font-family: Cera Pro;
-            src: url('fonts/TypeMates - Cera Round Pro Bold.otf');
+            src: url('www/fonts/TypeMates - Cera Round Pro Bold.otf');
 
             font-weight: normal;
 
@@ -102,7 +102,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark nav-cera-style" style="background-color: #001A42">
 
         <!--Top menu panel -->
-        <a href="#home" class="navbar-left mr-3"><img src="images/logo-eng-lightgreen-purple-1000x1000.png"
+        <a href="#home" class="navbar-left mr-3"><img src="www/images/logo-eng-lightgreen-purple-1000x1000.png"
                                                       width="80"></a>
 
 
@@ -146,7 +146,7 @@
 	    <a id="logsLink" data-target="#logsErrorDialog"></a>
         <a href="#" class="mr-3" @click="downloadLogs()" id="logsPopover" data-toggle="popover" data-trigger="hover"
             :data-content="texts[lang]['logs']">
-            <img  src="images/logs2.png" height="40">
+            <img  src="www/images/logs2.png" height="40">
         </a>
 
         <div class="btn-group btn-group-toggle" v-if="regShowLanguage() === 'true'" role="buttons"
@@ -1129,8 +1129,8 @@
         <div class="tab-pane fade" id="video">
             <div class="row">
                 <div class="mx-auto" style="width: 640px; height: 480px;">
-                <img id="streamImage" style="width: 640px; height: 480px;" class="img-thumbnail" src="images/plugStreamImage.png"
-                     v-bind:alt="texts[lang]['streamUnavailable']" @click="getSnapshot()" onerror="this.src='images/plugStreamImage.png'">
+                <img id="streamImage" style="width: 640px; height: 480px;" class="img-thumbnail" src="www/images/plugStreamImage.png"
+                     v-bind:alt="texts[lang]['streamUnavailable']" @click="getSnapshot()" onerror="this.src='www/images/plugStreamImage.png'">
                 </div>
             </div>
         </div>
